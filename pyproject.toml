@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyPTouch"
+readme = "README.md"
+description = "A wrapper for Brother P-Touch Raster Mode compatible printers."
+authors = [
+  { name="Adam Mathieson", email="adam@mathieson.dev" },
+  { name="Thomas Mathieson", email="thomas@mathieson.dev" },
+]
+version = "0.1.0"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Environment :: CPU",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Printing",
+    "Topic :: System :: Hardware :: Universal Serial Bus (USB) :: Printer"
+]
+dependencies = [
+    "pyusb~=1.2.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/space928/pyRenderdocApp"
+Issues = "https://github.com/space928/pyRenderdocApp/issues"
+
+[project.optional-dependencies]
+docs = []
+examples = []
+test = []
+
+[tool.hatch.build.hooks.version]
+path = "pyPTouch/_version.py"
