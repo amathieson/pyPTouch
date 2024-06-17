@@ -38,7 +38,9 @@ Homepage = "https://github.com/space928/pyRenderdocApp"
 Issues = "https://github.com/space928/pyRenderdocApp/issues"
 
 [project.optional-dependencies]
-docs = []
+docs = [
+    "pdoc3~=0.10.0"
+]
 examples = []
 test = []
 
